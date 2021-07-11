@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Profile card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        background: url(/images/bg-pattern-bottom.svg);
+        background-color: #19a1ad;
+      }
+      .attribution {
+        position: absolute;
+        top: 90%;
+        left: 70%;
+      }
+      .card {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 20px;
+        width: 20vw;
+        height: 340px;
+        display: flex;
+        justify-content: center;
+        background-color: white;
+      }
+      .card-content {
+        border-radius: 20px;
+      }
+      .top-image {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        display: inline-block;
+        width: 20vw;
+      }
+      .avatar {
+        position: absolute;
+        left: 35%;
+        top: 20%;
+        border-radius: 50px;
+        display: inline-block;
+      }
+      .img-txt {
+        line-height: 30px;
+        text-align: center;
+        margin-top: 70px;
+      }
+      .light-text {
+        color: gray;
+      }
+      .img-text2 {
+        margin-top: 20px;
+        color: gray;
+      }
+      .txtcontain {
+        display: flex;
+        justify-content: space-around;
+        font-weight: 600;
+        margin-top: 20px;
+      }
+      .txtcontain2 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 10px;
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-content">
+        <div class="card-header">
+          <img class="top-image" src="/images/bg-pattern-card.svg" />
+        </div>
+        <div class="profile">
+          <img class="avatar" src="/images/image-victor.jpg" alt="" />
+          <div class="img-txt">
+            Victor Crest <span class="light-text">26</span> <br />
+            <span class="img-text2">London</span>
+          </div>
+          <div class="txtcontain">
+            <div class="bottom-txt">80K</div>
+            <div class="bottom-txt">803K</div>
+            <div class="bottom-txt">1.4K</div>
+          </div>
+          <div class="txtcontain2">
+            <div class="bottom-txt">Followers</div>
+            <div class="bottom-txt">Likes</div>
+            <div class="bottom-txt">Photos</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">MorgzJohn</a>.
+    </div>
+  </body>
+</html>
